@@ -1,4 +1,3 @@
-export default function getStudentIdsSum(listOfStudent) {
-  const sum = listOfStudent.reduce((total, listOfStudent) => total + listOfStudent.id, 0);
-  return sum;
+export default function getStudentsByLocation(students, city) {
+  return students.filter((obj) => obj.location === city);
 }
