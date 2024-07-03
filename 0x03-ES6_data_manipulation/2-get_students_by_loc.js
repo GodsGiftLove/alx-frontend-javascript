@@ -1,3 +1,4 @@
-export default function getStudentsByLocation(students, city) {
-  return students.filter((obj) => obj.location === city);
+export default function getStudentsByLocation(listOfStudent, city) {
+  const newArray = listOfStudent.filter((listOfStudent) => listOfStudent.location === city);
+  return newArray;
 }
